@@ -17,17 +17,17 @@ body {
 header {
 	border-radius: 10px;
 	background-color: white;
-	box-shadow: 5px 15px 5px 15px
+	box-shadow: 5px 5px 5px 5px
 		rgba(0, 0, 0, 0.1);
-	padding: 10px;
+	padding: 20px;
 	position: relative;
-	
-}
+	height: 100vh;
+   }
 
 .nav-header {
 	display: flex;
 	justify-content: space-between;
-	padding: 10px;
+	padding: 10px 0  10px 10px;
 }
 
 .nav-header h1 {
@@ -42,6 +42,7 @@ header {
 	color: gold;
 	font-size: 1.5rem;
 	transition: 0.7s color;
+	margin-top: -25px;
 }
 .nav-toggle:hover {
 	color: rgb(193, 165, 7);
@@ -58,7 +59,7 @@ a {
 	display: block;
 	letter-spacing: 0.2rem;
 	text-transform: capitalize;
-	padding: 1rem;
+	padding: 1.5rem;
 	transition: 0.5s background;
 }
 .links a:hover {
@@ -76,16 +77,20 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-	header {
+	/* header {
 		height: 60vh;
-	}
+	} */
 	.info {
 		display: flex;
+		margin-top: 60px;
 	}
 	.text {
 		width: 50%;
-		padding-top: 1rem;
-		margin-top: 30px;
+		padding-top: 1.6rem;
+			
+	}
+	.text p{
+		line-height: 40px;
 	}
 	.links-container {
 		box-shadow: none;
@@ -183,6 +188,8 @@ a {
 .info .text {
 	letter-spacing: 0.07rem;
 	line-height: 30px;
+	padding: 10px;
+	font-size: 13px;
 }
 .title {
 	background: linear-gradient(to right, rgb(210, 39, 210),yellow
@@ -190,15 +197,33 @@ a {
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.text p{
+	font-size: 15px;
+}
+.book-space{
+	border-radius: 10px;
+	background: transparent;
+	border: 1px solid violet;
+	padding: 10px;
+	font-size: 13px;
+	cursor: pointer;
+}
+.book-space:hover{
+   border:2px inset rgb(248, 101, 248);
+   background-color: rgb(245, 250, 254);
+   color:  rgb(138, 43, 226);
 }
 
 .image-container .lady {
 	width: 300px;
+	margin-top: -25px;
 }
 
 @media screen and (min-width: 1024px) {
 	.image-container .lady {
-		width: 500px;
+		width: 600px;
 	}
 }
 
@@ -230,10 +255,15 @@ a {
 	overflow-x: auto;
 	overflow-y: hidden;
 	font-size: 1rem;
-	background-color: rgb(223, 234, 244);
+	/* background-color: rgb(223, 234, 244); */
 	display: flex;
 	justify-content: space-between;
-	gap: 20px;
+	justify-content: space-between;
+	gap: 30px;
+	padding: 15px;
+	margin:  40px;
+	
+	
 }
 .pagelinks::-webkit-scrollbar, .sceneries::-webkit-scrollbar{
 	display: none;
@@ -241,12 +271,13 @@ a {
 
 .pagelinks li {
 	background: transparent;
-	padding: 6px;
+	padding: 10px;
 	border-radius: 15px;
 	border: 1px solid gray;
 	transition: 0.5s ease-in-out;
 	transition-property: background;
 	display: inline-block;
+	
 }
 .pagelinks li a {
 	color: blueviolet;
@@ -274,15 +305,12 @@ a {
 		rgba(0, 0, 0, 0.1);
 	width: 100%;
     padding: 20px;	
-	margin-top: 15px;
+	margin-top: 20px;
 }
 .container h2{
 	color: rgb(196, 161, 71);
 	text-transform: capitalize;
 }
-
-
-
 
 
 .sliding {
@@ -309,7 +337,7 @@ a {
 }
 
 .sliding .desc {
-	font-size: 15px;
+	font-size: 10px;
 	position: absolute;
 	text-align: center;
 	color: rgb(255, 252, 252);
@@ -396,6 +424,7 @@ a {
 		rgba(0, 0, 0, 0.1);
 	position: relative;
 	width: 40%;
+	margin-top: 20px;
 }
 .review p {
 	padding: 10px;
@@ -417,6 +446,7 @@ a {
 	top: 0;
 	left: 0;
 	overflow: hidden;
+	margin-top: 20px;
 }
 
 .video_play {
@@ -471,7 +501,7 @@ a {
 	}
 }
 
-/* FAG  */
+/* FAQ  */
 
 .section-center h1 {
 	font-family: "Great Vibes", cursive;
@@ -508,7 +538,7 @@ button {
 	justify-content: space-between;
 	align-items: center;
 	padding-bottom: 1.5rem;
-	font-size: 25px;
+	font-size: 15px;
 }
 .question-btn {
 	background: transparent;

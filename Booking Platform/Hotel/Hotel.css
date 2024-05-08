@@ -7,7 +7,7 @@ body {
 	background-color: rgb(230, 242, 252);
 }
 header {
-	min-height: 50vh;
+	height: 100vh;
 	background: linear-gradient(
 			rgba(0, 0, 0, 0.5),
 			rgba(0, 0, 0, 0.8)
@@ -17,8 +17,6 @@ header {
 	background-size: 100% 100%;
 	image-rendering: auto;
 	width: 100%;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
 	image-rendering: pixelated;
 	object-fit: fill;
 	object-position: center;
@@ -37,6 +35,7 @@ header {
 	background: transparent;
 	border: none;
 	color: white;
+	
 }
 button:hover,
 #home button:hover {
@@ -53,7 +52,8 @@ button:hover,
 	align-items: center;
 	text-align: center;
 	position: relative;
-	top: 5rem;
+	top: 10rem;
+	padding: 13px;
 	color: white;
 }
 .search input {
@@ -83,16 +83,20 @@ button:hover,
 .hotel-desc {
 	padding: 10px;
 	line-height: 20px;
+	margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
 	.hotel-desc {
 		width: 400px;
 	}
 }
+
 .hotel-info {
 	font-size: 26px;
 	font-weight: lighter;
 	font-style: italic;
+	padding: 30px;
+	
 }
 .hotel-info::before {
 	content: "";
@@ -140,9 +144,10 @@ button:hover,
 	box-shadow: 0px 0px 5px 5px
 		rgba(0, 0, 0, 0.1);
 	border-radius: 25px;
-	width: 70%;
+	width: 77%;
 	display: inline-block;
 	margin: 5px;
+	margin-bottom: 100px;
 }
 .rooms:hover,
 .room:hover {
@@ -154,6 +159,8 @@ button:hover,
 	position: relative;
 	overflow-x: auto;
 	overflow-y: hidden;
+	display: flex;
+	gap: 30px;
 }
 .countries::-webkit-scrollbar, .sceneries::-webkit-scrollbar{
 	display: none;
@@ -186,8 +193,9 @@ button:hover,
 }
 
 center {
-	margin-top: 15px;
+	margin: 40px 0 40px 0;
 	background: rgb(213, 225, 236);
+
 }
 .steps p {
 	padding: 10px;
@@ -249,6 +257,7 @@ center {
 
 .sceneries {
 	margin: 10px;
+	padding: 10px;
 }
 .sceneries .room {
 	background: rgb(222, 222, 222);
@@ -257,6 +266,8 @@ center {
 	border-radius: 25px;
 	width: 100%;
 	margin: 5px;
+	margin-top: 15px;
+	
 }
 
 .room img {
