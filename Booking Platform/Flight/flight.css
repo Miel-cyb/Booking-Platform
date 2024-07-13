@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: rgb(230, 242, 252);
+}
+html {
+	scroll-behavior: smooth;
+}
+
+header {
+	min-height: 80vh;
+	width: 100%;
+	background: linear-gradient(
+			rgba(0, 0, 0, 0.2),
+			rgba(0, 0, 0, 0.1)
+		),
+		url(./images/flights.jpg);
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#home button {
+	background: transparent;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 15px;
+	color: white;
+}
+
+.flight-links button {
+	padding: 10px;
+	background: transparent;
+	border: none;
+	color: white;
+}
+button:hover,
+#home button:hover {
+	color: aliceblue;
+	background: rgba(0, 0, 0, 0.7);
+	cursor: pointer;
+	border: 1px inset;
+	border-radius: 10px;
+}
+
+.greeting {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	color: white;
+}
+
+.source {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.source div {
+	background: rgb(152, 151, 151);
+	margin-top: 17px;
+	border-radius: 10px;
+	margin: 3px;
+}
+.search {
+	font-size: 15px;
+	margin-top: 20px;
+	border-radius: 30px;
+	padding: 10px;
+	border-color: white;
+}
+@media screen and (max-width: 320px) {
+	.source div {
+		width: 130px;
+	}
+	.source div input {
+		width: 130px;
+	}
+	.search {
+		margin-bottom: 15px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.greeting {
+		margin-top: 100px;
+	}
+	.search-area {
+		background-color: white;
+		border-radius: 10px;
+		margin-top: 20px;
+	}
+	.source {
+		
+		display: flex;
+	}
+	.search {
+		border: 3px solid gray;
+		width: 60%;
+	}
+}
+
+.airlines div {
+	border-bottom: 1px solid black;
+	margin-top: 10px;
+	padding: 15px;
+	background-color: white;
+	font-size: 20px;
+}

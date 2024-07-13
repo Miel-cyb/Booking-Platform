@@ -1,0 +1,235 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    background-color: rgb(230, 242, 252);
+}
+html{
+    scroll-behavior: smooth;
+}
+h2{
+    color: rgb(206, 149, 5);
+    margin-top: 30px;
+    margin: 10px;
+}
+main{
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    background: url("./images/item-1.jpeg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: left 20% center;
+   margin-bottom: 30px;
+   
+}
+
+.writings{
+ position: relative;
+ top: 0;
+ left: 0;
+ background: rgb(153, 134, 31);
+ width: 50vw; 
+ padding: 10px;
+ line-height: 25px;
+ border-right-style: groove;
+ height: 75vh;
+
+}
+.writings h2{
+    color: chartreuse;
+}
+.writings p{
+    color: whitesmoke;
+}
+ .writings button{
+    margin-top: 10px;
+    padding: 7px;
+    border: 2px groove chartreuse;
+    color: blueviolet;
+    border-radius: 10px; 
+ }
+ .writings button:hover{
+    border: 3px groove;
+    color: black;
+ }
+@media screen and (max-width:320px) {
+    main, .writings{
+        height: 85vh;
+    }
+}
+@media screen and (min-width:768px) and (max-width:900px) {
+    main{
+        height: 55vh;
+    }
+    .writings{
+        width: 40vw;
+        height: 55vh;
+        padding-top: 70px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    main{
+        height: 70vh;
+    }
+    .writings{
+        height: 70vh;
+        width:30vw ;
+        padding-top: 100px;
+    }
+}
+
+.text .meal{
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+ .shape{
+    content: "";
+    position: absolute;
+    background-color: chartreuse;
+    padding: 70px;
+    height: 16rem;
+    z-index: -1;
+    transform: rotate(-60deg);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 70px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 50px;
+}
+@media screen and (min-width:768px) {
+     .text{
+        padding-left: 20px;
+        display: flex;
+        gap: 60px;
+        justify-content: center;
+        align-items: center;
+     }
+     .inscription{
+        width: 700px;
+     }
+}
+.text img{
+    width: 200px;    
+}
+.restaurants{
+    margin-bottom: 20px;
+    margin: 10px;
+}
+.restaurant-image{
+    background: rgb(244, 228, 138);
+    border-radius: 15px;
+     margin-top: 15px;
+}
+.restaurant-image img{
+    width: 100%;
+   
+}
+.restaurant-image:hover{
+    border: 2px solid chartreuse;
+}
+
+@media screen and (min-width:768px) {
+    .restaurants{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .restaurant-image{
+        width: 47%;
+       
+    }
+}
+@media screen and (min-width:1024px) {
+    .restaurant-image{
+        width: 30%;
+    }
+}
+.filter-btns{
+    white-space: nowrap;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.filter-btns button{
+    background: transparent;
+    border-radius: 10px;
+    border: 3px solid rgb(244, 228, 138);
+    padding: 10px;
+    margin: 0 2px 0 2px;
+    text-transform: capitalize;
+}
+
+.filter-btn:hover{
+     background: rgb(236, 212, 79);
+  color: whitesmoke;
+}
+
+
+@media screen and (min-width:768px) {
+    .filter-btns{
+        justify-content: center;
+    }
+}
+.menu {
+	display: grid;
+	place-items: center;
+}
+.menu-item{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.menu-item img {
+	width: 100%;
+    border-radius: 10px;
+    border: 3px solid rgb(228, 177, 48);
+    object-fit: cover;
+     height: 200px;
+ 
+}
+.name {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px dotted black;
+	width: 100%;
+	font-size: 17px;  
+    text-transform: capitalize; 
+    margin-top: 10px;
+}
+.desc {
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .menu {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.menu-item{
+    display: flex;
+}
+
+.menu-item img{
+    width: 200px;
+    border-radius: 10px;
+    border: 3px solid rgb(228, 177, 48);
+    object-fit: cover;
+    height: 150px;
+    }
+    .item-info .desc{
+     max-width: 25vw;
+ }
+ .item-info{
+    padding: 5px;
+ }
+}
+
