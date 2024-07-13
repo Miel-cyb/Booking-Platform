@@ -1,0 +1,310 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: rgb(230, 242, 252);
+}
+header {
+	height: 100vh;
+	background: linear-gradient(
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.8)
+		),
+		url(./images/tx-seztx-pool-21834-square.avif);
+	background-position: center;
+	background-size: 100% 100%;
+	image-rendering: auto;
+	width: 100%;
+	image-rendering: pixelated;
+	object-fit: fill;
+	object-position: center;
+}
+#home button {
+	background: transparent;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 15px;
+	color: white;
+}
+
+.hotel-links button {
+	padding: 10px;
+	background: transparent;
+	border: none;
+	color: white;
+	
+}
+button:hover,
+#home button:hover {
+	color: aliceblue;
+	background: rgba(0, 0, 0, 0.7);
+	cursor: pointer;
+	border: 1px inset;
+	border-radius: 10px;
+}
+.greeting {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	top: 10rem;
+	padding: 13px;
+	color: white;
+}
+.search input {
+	font-size: 15px;
+	margin-top: 10px;
+	border-radius: 30px;
+	padding: 15px;
+	background: rgba(0, 0, 0, 0.5);
+	border-color: white;
+}
+@media screen and (max-width: 320px) {
+	header {
+		min-height: 80vh;
+	}
+}
+@media screen and (min-width: 768px) {
+	.search input {
+		width: 260%;
+		margin-left: -100px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	header {
+		min-height: 70vh;
+	}
+}
+.hotel-desc {
+	padding: 10px;
+	line-height: 20px;
+	margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+	.hotel-desc {
+		width: 400px;
+	}
+}
+
+.hotel-info {
+	font-size: 26px;
+	font-weight: lighter;
+	font-style: italic;
+	padding: 30px;
+	
+}
+.hotel-info::before {
+	content: "";
+	padding: 2px;
+	background-color: gold;
+	width: 100px;
+	display: inline-flex;
+	position: relative;
+	bottom: 5px;
+}
+.hotel-info::after {
+	content: "";
+	padding: 2px;
+	background-color: gold;
+	width: 100px;
+	display: inline-flex;
+	position: relative;
+	bottom: 5px;
+}
+@media screen and (max-width: 320px) {
+	.hotel-info::before {
+		width: 50px;
+	}
+	.hotel-info::after {
+		width: 50px;
+	}
+}
+
+
+.link a button {
+	padding: 10px;
+	background: transparent;
+	color: blueviolet;
+	border: 3px groove gold;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+.link a button:hover {
+	border: 2px groove gold;
+	cursor: pointer;
+}
+
+.rooms {
+	background: rgb(222, 222, 222);
+	box-shadow: 0px 0px 5px 5px
+		rgba(0, 0, 0, 0.1);
+	border-radius: 25px;
+	width: 77%;
+	display: inline-block;
+	margin: 5px;
+	margin-bottom: 100px;
+}
+.rooms:hover,
+.room:hover {
+	cursor: pointer;
+	border: groove gold;
+}
+.countries {
+	white-space: nowrap;
+	position: relative;
+	overflow-x: auto;
+	overflow-y: hidden;
+	display: flex;
+	gap: 30px;
+}
+.countries::-webkit-scrollbar, .sceneries::-webkit-scrollbar{
+	display: none;
+}
+
+.rooms img {
+	width: 100%;
+	border-radius: 25px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.rooms p,
+.rooms span,
+.room p,
+.room span {
+	padding: 10px;
+}
+
+@media screen and (min-width:768px) {
+	.rooms, .room {
+		width: 40%;
+	}
+}
+@media screen and (min-width:1024px) {
+	.rooms, .room{
+		width: 25%;
+	}
+}
+
+center {
+	margin: 40px 0 40px 0;
+	background: rgb(213, 225, 236);
+
+}
+.steps p {
+	padding: 10px;
+	background-color: blueviolet;
+	color: white;
+	clip-path: circle();
+}
+.steps i {
+	padding: 6px;
+	background-color: rgb(164, 79, 243);
+	border: none;
+	color: white;
+}
+.steps {
+	width: 80%;
+	border-top: 1px dotted;
+	margin-top: 10px;
+	padding-bottom: 1rem;
+}
+
+
+
+.third-section {
+	margin: 10px;
+	padding: 10px;
+}
+.reason p:first-child {
+	font-size: 20px;
+	font-weight: 500;
+	font-style: italic;
+}
+.imagee img {
+	width: 100%;
+	height: 100%;
+	border: 2px groove gold;
+	object-fit: cover;
+	object-position: center;
+}
+@media screen and (min-width:768px) {
+	.imagee img{
+		width: 100%;
+		height: 100%;
+	}
+	.third-section{
+		display: flex;
+	}
+	.reason{
+		margin-left: 10px;
+		line-height: 30px;
+		padding: 20px;
+	}
+}
+
+@media screen and (min-width:1024px) {
+	.reason{
+		line-height: 40px;
+	}
+}
+
+.sceneries {
+	margin: 10px;
+	padding: 10px;
+}
+.sceneries .room {
+	background: rgb(222, 222, 222);
+	box-shadow: 0px 0px 5px 5px
+		rgba(0, 0, 0, 0.1);
+	border-radius: 25px;
+	width: 100%;
+	margin: 5px;
+	margin-top: 15px;
+	
+}
+
+.room img {
+	width: 100%;
+	border-radius: 25px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	object-fit:cover;
+	object-position: center;
+}
+
+
+@media screen and (min-width:768px) {
+	.sceneries{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	}
+	
+
+}
+
+
+@media screen and (min-width: 900px) {
+	.sceneries {
+		display: flex;
+	}
+	.sceneries .room {
+	  height: 18rem;
+	}	
+}
+
+
+footer {
+	padding: 20px;
+	background: rgb(195, 226, 252);
+	font-size: 16px;
+}
