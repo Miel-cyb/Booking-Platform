@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(11, 21, 31);
+}
+
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 9px #d24dd71f;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background:transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    
+} 
+#btn{
+    top: 0;
+    left: 0;
+    position:absolute;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(to right,rgb(35, 62, 88) , rgb(17, 109, 201));
+    border-radius: 30px;
+    transition: 0.5s ;
+    
+}
+ .input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s ;
+}
+.input-field{
+    width:100%;
+    padding: 5px 0;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    display: block;
+    cursor: pointer;
+    margin: auto;
+    background: linear-gradient(to right,rgb(35, 62, 88) , rgb(17, 109, 201));
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+}
+.checkbox{
+    margin: 30px 10px 30px 0;
+
+}
+span{
+color: #777;
+font-size: 12px;
+position: absolute;
+ bottom: 64px;
+}
+#loginForm{
+    left: 50px;
+}
+#signUpForm{
+    left: 450px;
+}
+@media screen and (max-width:320px) {
+    .form-box{
+        width: 280px;
+        margin: 10px;
+    }
+    .input-group{
+        width: 230px;
+    }
+}
